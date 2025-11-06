@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./port.css" /> -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: black;
+      }
+
+      /* Header */
+
+      #header pre {
+        left: 0%;
+        font-size: large;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #header img {
+        height: 180px;
+        width: 180px;
+        float: right;
+        margin-right: 10%;
+
+        clip-path: circle(50%);
+        object-fit: cover;
+        margin-top: -8%;
+      }
+      #header img:hover {
+        transform: scale(1.5);
+      }
+      #header {
+        height: 220px;
+        width: 100%;
+        background-image: url("./sanjayporttie.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* Navbar */
+
+      #nav {
+        background-color: black;
+        justify-content: center;
+        padding: 10px 0;
+      }
+      #nav a {
+        color: white;
+      }
+      #nav a:hover {
+        opacity: 0.5;
+        transform: scale(1.3);
+      }
+
+      /* Home */
+
+      #home {
+        background-image: linear-gradient(black 60%, rgb(202, 183, 9));
+        word-spacing: 10px;
+        font-size: large;
+        padding: 5px;
+      }
+
+      /* Education */
+
+      #education {
+        background-image: linear-gradient(black 60%, rgb(202, 183, 9));
+        word-spacing: 10px;
+        font-size: large;
+        padding: 5px;
+      }
+      #education p {
+        padding: 4px;
+      }
+
+      /* contacts */
+
+      #contact {
+        bottom: 100%;
+        height: 100px;
+        width: 100%;
+        background-image: linear-gradient(black 60%, rgb(202, 183, 9));
+        display: flex;
+        justify-content: center;
+      }
+      #contact a {
+        text-decoration: none;
+        color: white;
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+
+      /* project */
+
+      #projects {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        word-spacing: 10px;
+        line-height: 40px;
+        font-size: large;
+        padding: 5px;
+        background-image: linear-gradient(black 60%, rgb(202, 183, 9));
+      }
+
+      #projects a {
+        text-decoration: none;
+        color: white;
+      }
+
+      /* Certificates */
+      #certificate {
+        padding: 5px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        background-image: linear-gradient(black 60%, rgb(202, 183, 9));
+      }
+
+      #certificate p {
+        margin-left: 10%;
+        font-size: larger;
+      }
+
+      #certificate a {
+        margin-left: 10%;
+        font-size: larger;
+      }
+
+      /* Skills */
+      #skills {
+        background-image: linear-gradient(black 60%, rgb(202, 183, 9));
+        word-spacing: 10px;
+        font-size: large;
+        padding: 5px;
+        line-height: 30px;
+      }
+      /* Internships */
+      #intern {
+        background-image: linear-gradient(black 60%, rgb(202, 183, 9));
+        word-spacing: 10px;
+        font-size: large;
+        padding: 5px;
+      }
+      #intern p {
+        padding: 4px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <h1 class="p-3">Sanjay Das Sivan</h1>
+      <pre>
+ “Every error is a stepping stone to innovation.”
+    </pre
+      >
+      <img src="./sanjay-das-resized.jpg" alt="my photo" />
+    </div>
+
+    <!-- NavBar -->
+    <div class="navbar navbar-expand-lg navbar-collaspe sticky-top" id="nav">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#nav-details"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar nav" id="nav-details">
+        <li class="nav-item ms-3"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item ms-3">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link" href="intern">Internships</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link" href="#certificate">Certifications</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <!-- <li class="nav-item ms-3">
+          <a class="nav-link" href="#">Certificates</a>
+        </li> -->
+        <li class="nav-item ms-3">
+          <a class="nav-link" href="#contact">Contacts</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- HOME -->
+    <div id="home" class="bg-dark text-white">
+      <h3 class="mt-2"><i class="bi bi-house"> HOME </i></h3>
+      <p>
+        Curious and analytical Computer Science graduate with a growing interest
+        in data science and web development. Recently completed a Frontend
+        Development course (HTML, CSS, JavaScript, Bootstrap) and currently
+        exploring JSP and Servlets for backend fundamentals. Familiar with
+        Python, SQL, and basic data visualization tools, and eager to deepen my
+        understanding through real-world applications. Seeking an entry-level
+        role where I can apply my learning mindset, foundational technical
+        skills, and problem-solving approach to contribute meaningfully and grow
+        alongside a dynamic team.
+      </p>
+    </div>
+
+    <!-- Education -->
+    <div class="bg-dark text-white" id="education">
+      <h3 class="mt-2"><i class="bi bi-pen"> EDUCATION </i></h3>
+      <ul class="py-2">
+        <li>BE - CSE | 2025</li>
+        <p>Dr.N.G.P.Institute of Technology, Coimbatore 79.2%.</p>
+
+        <li>HSC | 2021</li>
+        <p>Trinity Matric HR Sec School, Coimbatore 91.1%.</p>
+
+        <li>SSLC | 2019</li>
+        <p>Trinity Matric HR Sec School, Coimbatore 89.2%.</p>
+      </ul>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="text-white" id="projects">
+      <h3 class="mt-3"><i class="bi bi-folder"> PROJECT WORK</i></h3>
+      <ul>
+        <li>
+          Integration of Search Query Summarization with Carbon Emission
+          Assessment | 2024-2025·
+        </li>
+        <li>
+          The project centers on promoting 90% of environmental sustainability
+          through digital practices, focusing on their ecological impact
+          especially from search engines.
+        </li>
+        <li>
+          A data-driven approach is employed to estimate the carbon footprint of
+          search queries, providing users with valuable insights into the
+          environmental impact of their digital activities thereby reducing it
+          to 70 to 80% of emissions.
+        </li>
+        <li>
+          Contributed to 50% of the development and analysis phase of the
+          project to improve technical skills.
+        </li>
+      </ul>
+      <a
+        href="https://github.com/SanjaydasSivan/Search-Engine-Summerizer"
+        class="ms-3"
+      >
+        <i class="bi bi-folder-symlink"> SEARCH ENGINE SUMMARIZER </i></a
+      >
+    </div>
+
+    <!-- Certifications -->
+    <div class="text-white" id="certificate">
+      <h3>CERTIFICATIONS</h3>
+      <h4 class="mx-5">CIT HACKATHON</h4>
+      <p>
+        Winner in Hackathon for an Environmental Sustainability based project at
+        CIT, Coimbatore | 2024
+      </p>
+      <br />
+      <a
+        role="button"
+        id="hackathonPhoto"
+        data-bs-toggle="popover"
+        data-bs-html="true"
+        data-bs-content="<img src='CIT HACKATHON.jpg' alt='Hackathon winner photo' class='img-thumbnail'>"
+      >
+        View Certificate Photo </a
+      ><br /><br /><br />
+      <h4 class="mx-5">KEY CHARADES</h4>
+      <p>IInd in Key CHARADES in Melina'24 at CIT, Coimbatore | 2024</p>
+      <a
+        role="button"
+        id="winningphoto"
+        data-bs-toggle="popover_2"
+        data-bs-html="true"
+        data-bs-content="<img src='./code winning.jpg'  class='img-thumbnail'>"
+      >
+        View Certificate Photo
+      </a>
+      <br /><br /><br />
+    </div>
+
+    <!-- Internships -->
+    <div id="intern" class="bg-dark text-white">
+      <h3 class="mt-2"><i class="bi bi-house"> Internships </i></h3>
+      <p
+        style="
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+        "
+      >
+        <b>Web Development</b>
+      
+
+      <ul>
+        NxtLogic Software Solutions
+        <li>
+          Worked together with more experienced developers to incorporate
+          powerful backend features using HTML, CSS, and JavaScript.
+        </li>
+        <li>
+          Built and into practice a shopping cart system that improved
+          navigation flow and system performance by 25% through efficient
+          front-end and back-end communication.
+        </li>
+        <li>
+          Helped create the user interface's layout and design, emphasising
+          responsiveness and easy navigation decreasing.
+        </li>
+      </ul>
+      <b>Java full Stack Developer</b>
+      <ul>
+        Indra Institute of Education<br />
+        <li>
+          Using HTML, CSS, Bootstrap, and JavaScript, responsive web pages were
+          built and stylized to maximize user experience and cross-browser
+          compatibility.
+        </li>
+        <li>
+          Prepared for the construction of scalable cloud-based applications by
+          gaining practical experience with Java and backend technologies such
+          as JDBC, JSP, Spring, Spring Boot, SQL, and AWS.
+        </li>
+      </ul>
+      </p>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills" class="text-white">
+      <h3><i class="bi bi-laptop"> SKILLS </i></h3>
+      <ul class="list">
+        <li>Programming skills : Java, Python, Structured Query Language</li>
+        <li>Development skills : HTML, CSS, JavaScript</li>
+        <li>Tools & Platforms : Visual Studio Code, MySQL, Jupyter Notebook</li>
+      </ul>
+    </div>
+
+    <!-- Contacts -->
+    <div
+      class="text-white d-flex justify-content-inline-block align-items-center"
+      id="contact"
+    >
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=hr@example.com&su=Application for Developer Role&body=Dear HR,%0D%0AI'm interested in your job role..."
+        target="_blank"
+      >
+        <i class="bi bi-envelope-at-fill"> sanjuradhika35@gmail.com</i></a
+      ><br />
+      <!-- <p><i class="bi bi-phone-vibrate"> 8248619399</i></p><br> -->
+      <a href="https://github.com/SanjaydasSivan/"
+        ><i class="bi bi-github"> SanjaydasSivan</i></a
+      ><br />
+      <a href="https://www.linkedin.com/in/sanjaydas-sivan-131284269/"
+        ><i class="bi bi-linkedin"> SanjaydasSivan</i></a
+      >
+      <a href="https://leetcode.com/u/Sanjay_Das_/"
+        ><i class="bi bi-code-square"> Sanjay_Das_ </i></a
+      >
+    </div>
+  </body>
+  <script>
+    const popover = new bootstrap.Popover(
+      document.getElementById("hackathonPhoto")
+    );
+    const popover_2 = new bootstrap.Popover(
+      document.getElementById("winningphoto")
+    );
+  </script>
+</html>
