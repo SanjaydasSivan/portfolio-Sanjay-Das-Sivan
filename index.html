@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        background: #ffffff;
+        padding: 50px 40px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+        width: 90%;
+      }
+
+      h1 {
+        margin-bottom: 15px;
+        color: #333;
+      }
+
+      p {
+        margin-bottom: 35px;
+        color: #666;
+        font-size: 15px;
+      }
+
+      .btn-group {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .btn {
+        text-decoration: none;
+        padding: 14px 28px;
+        font-size: 16px;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+      }
+
+      .resume-btn {
+        background: #667eea;
+        color: #fff;
+      }
+
+      .resume-btn:hover {
+        background: #5a67d8;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(90, 103, 216, 0.4);
+      }
+
+      .portfolio-btn {
+        background: transparent;
+        color: #667eea;
+        border: 2px solid #667eea;
+      }
+
+      .portfolio-btn:hover {
+        background: #667eea;
+        color: #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(90, 103, 216, 0.4);
+      }
+
+      @media (max-width: 480px) {
+        .btn-group {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Welcome 👋 - Sanjay Das S</h1>
+      <p>Select an option to view my professional details</p>
+
+      <div class="btn-group">
+        <a href="resume.html" class="btn resume-btn">Resume</a>
+        <a href="portfolio.html" class="btn portfolio-btn">Portfolio</a>
+      </div>
+    </div>
+  </body>
+</html>
